@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="">
+    <title>@_adriannzz - 71230992 - Personal Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Data Saya</h1>
+    </header>
+
+    <div class="center">
+
+        <section class="card">
+            <img src="kucingMantap.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h1>About Me</h1>
+                <h4>Andriano Kurniawan Ladjeba</h4>
+                <p>@_adriannzz</p>
+                <p>Palu,Sulawesi Tengah,Indonesia</p>
+
+                <h4>keterampilan</h4>
+                    <li>Html</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Pythons</li>
+                    <li>C</li>
+                <button id="tombolGantiWarna">Ganti Warna Background</button>
+            </div>
+        </section>   
+
+            
+    <footer>
+
+        <audio controls autoplay loop>
+            <source src="arab3.mp3" loop="true" autostart="true" type="audio/mp3">
+        </audio>
+    
+    </footer>
+
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRandom() {
+            const warnaList = ['red', 'blue', 'green'];
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = document.getElementById('tombolGantiWarna')
+        tombolGantiWarna.addEventListener('click', gantiWarnaRandom)
+    </script>
+</body>
+</html>
